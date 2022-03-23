@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo {
+    color: rgb(233, 23, 23);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/*header*/
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #e60d05;
+    background: -webkit-linear-gradient(to right, hsla(12, 97%, 24%, 0.479), hsla(12, 96%, 46%, 0.438)), url("../img/UNA-Liberia-Guanacaste.jpg");
+    background: linear-gradient(to right, hsla(9, 92%, 31%, 0.459), hsla(14, 96%, 46%, 0.438)), url("../img/UNA-Liberia-Guanacaste.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 25px;
+    
+}
+
+nav > a:hover {
+   
+    text-decoration: underline;
+    
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 80px;
+    color:#fff; 
+}
+
+.textos-header h2{
+    font-size: 40px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Acerca de mi*/
+
+.contenido-sobre-mi{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-mia{
+  margin: 1%;
+ 
+}
+
+.contenedor-mio .contenido-textos{
+    width: 45%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.contenido-textos h3 span{
+    background:rgb(233, 23, 23);
+    color:#fff;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+   
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 25px;
+}
+/*Curriculum*/
+
+.curriculum{
+   background: rgb(255, 255, 255);
+   padding-bottom: 30px;
+}
+
+.curriculum-cont{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  
+}
+
+.curriculum-ind{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.curriculum-ind img{
+    width: 90%;
+}
+
+.curriculum-ind h3{
+    margin: 10px 0;
+}
+
+.curriculum-ind p{
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+/*Proyectos*/
+
+.contenedor  h2{
+    font-size: 45px;
+}
+
+.proyectos{
+    background: #fff;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background:hsla(12, 96%, 46%, 0.733);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+}
+
+.hover-galeria p{
+    color: #fff;
+    text-align: center;
+    
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*Contactos*/
+
+.form-cta{
+    font-family: inherit;
+    background-color: #f13312;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form{
+    background-image:linear-gradient(to top, #ffffff 2%, #f13312 100%); 
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+
+.form-contenedor{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form-titulo{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+    color: #fff;
+}
+
+.form-input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 0.2em;
+}
+
+.form-input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+   text-align: center;
+   
+}
+
+.content-foo h4{
+   color: #fff;
+   border-bottom: 3px solid #e60d05;
+   padding-bottom: 5px;
+   margin-bottom: 10px;
+ }
+
+ .content-foo p{
+    color: #ccc;
+  }
+
+  .titulo-final{
+      font-size: 24px;
+      text-align: center;
+      margin: 20px 0 0 0;
+      color: #9e9797;
+  }
